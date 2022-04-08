@@ -1,4 +1,12 @@
 import React from 'react';
 
-const Auth =  () => <span>Auth</span>
+
+function Auth(){
+  return(
+      <>
+      <span>Auth</span>
+      <footer>&copy; Nwitter {new Date().getFullYear()}</footer>
+    </>
+  )
+}
 export default Auth;

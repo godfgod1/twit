@@ -7,10 +7,12 @@ import {
 import Auth from "./routes/Auth"
 import Home from "./routes/Home"
 import React, { useState } from "react";
+import { auth } from "./fBase";
+console.log(auth)
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-
+  
   return(
     <Router>
       <Routes>
@@ -19,6 +21,7 @@ function App() {
         :
         <Route  exact={true}  path="/" element={<Auth/>}/>
         }
+        
       </Routes>
     </Router>
   )
